@@ -1,1 +1,1 @@
-# Fullstack Javascript Bootcamp 2.0
+# Javascript
