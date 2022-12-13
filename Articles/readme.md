@@ -1,18 +1,4 @@
-# Javascript
-
-## HTML and CSS
-
-**Project 1**
-
-[Sol](./HTML/)
-
-## Tailwind CSS
-
-**Project 1**
-
-[Sol](./Tailwind%20CSS/index.html)
-
-## Articles
+# Articles
 
 **Article 1 - Introduction to Web and HTML**
 
