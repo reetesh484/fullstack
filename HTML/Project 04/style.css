@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+body{
+    padding:20px 150px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin-right:70px;
+}
+
+.hero{
+    margin-top:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section h2{
+    font-size:70px;
+}
+
+.left-section p{
+    margin:20px 0;
+}
+button{
+    border:none;
+    padding:12px 20px;
+    background-color:#3B855B;
+    color:white;
+    border-radius:10px;
+}
+
+
+
+
