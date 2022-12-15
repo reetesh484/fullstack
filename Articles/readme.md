@@ -15,3 +15,7 @@
 **Article 4 - CSS Positions**
 
 [Sol](https://reeteshtiwari.hashnode.dev/css-positions)
+
+**Article 5 - Git Version Control**
+
+[Sol](https://reeteshtiwari.hashnode.dev/git-version-control)
