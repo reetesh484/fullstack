@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,200;1,300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#f3f3f3;
+    font-family: 'Poppins';
+}
+
+/* remove default styles */
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* global styles */
+body{
+    background-color: #121212;
+}
+section{
+    margin-bottom:5%;
+    
+}
+
+button{
+    border:none;
+    background-image: url(./Assets/Icons/btn-pink-bg.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    padding:8px 20px;
+    background-color: #121212;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-right:20px;
+}
+.content{
+    max-width:1250px;
+    margin:auto;
+}
+
+span{
+    color:#AF3AA9;
+    font-weight: bold;
+}
+
+/* navigation styling */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+nav>div>*{
+    margin-right:15px;
+}
+
+.dot{
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* hero section  */
+
+.hero{
+    padding-top:5%;
+    background-image: url(./Assets/Photos/frontCards.png),url(./Assets/Photos/backCards.png);
+    background-size:60%,65%;
+    background-repeat:no-repeat,no-repeat;
+    background-position:right -25% bottom 0, top -50px right 10px;
+    padding-bottom:5%;
+}
+
+.hero h1{
+    font-size:60px;
+    max-width:65%;
+}
+
+.hero .left>*{
+    margin-bottom:40px;
+}
+
+.hero .left p{
+    max-width:30%;
+}
+
+.hero .left svg{
+    width:4em;
+    vertical-align: middle;
+}
+
+.hero .reports{
+    display: flex;
+}
+
+.hero .reports div{
+    display: flex;
+    margin-right:3%;
+}
+
+
+.count{
+    font-size:32px;
+    font-weight: bold;
+    margin-right:1%;
+}
+
+/* logos section  */
+
+.logos{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(58, 56, 56);
+    padding:5% 8%;
+}
+
+.logos ul{
+    width:100%; 
+    justify-content: center;
+}
+
+.logos ul li{
+    margin-right:5%;
+}
+
+/* features section  */
+
+.features{
+    padding-top:5%;
+}
+
+.features-desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 20px;
+}
+
+.features-desc > *{
+    max-width: 50%;;
+}
+
+.features-desc h2{
+    font-size:70px; 
+    max-width:60%;
+}
+
+.features-desc p{
+    font-size:20px;
+    max-width:400px;
+}
+
+.features-list{
+    display:flex;
+    justify-content: center;
+    margin-top:10%;
+}
+
+.features-list > div{
+    width:25%;
+    border:1px solid white;
+    padding:20px;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.features-list > div > img{
+    width:100px;
+}
+
+.features-list > div > p{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.features-list > div:nth-child(odd){
+    background-color: rgba(29, 28, 28, 0.993);
+}
+.features-list > div:nth-child(even){
+    background-color:rgba(54, 53, 53, 0.993);
+}
+.features-list> div:nth-child(2n){
+    position:relative;
+    top:-20px;
+}
+
+/* card choices section   */
+
+.card-choice{
+    padding-top:8%;
+    background-color: #fff;
+    text-align: center;
+}
+.card-choice > *{
+    color:#000;
+}
+
+.card-choice h2{
+    font-size:50px;
+    margin-bottom:5%;
+}
+
+.card-choice p{
+    max-width:40%;
+    text-justify:distribute-all-lines;
+    margin:auto;
+}
+
+.card-choice img{
+    max-width:80%;
+}
+
+
+/* customer review section  */
+
+.review{
+    padding-top:5%;
+    text-align: center;
+}
+
+.review h2{
+    font-size:50px;
+    margin-bottom:5%;
+}
+
+.review p{
+    margin-bottom:5%;
+}
+
+.feedback{
+    display:grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
+    place-items: center;
+    height: max-content;
+    padding:5%;
+}
+
+.feedback > div{
+    display: flex;
+    border:1px solid white;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+    padding:15px;
+    flex-direction: column;
+    background-color: #1E1F24;
+}
+
+.feedback > div:nth-child(1){
+    background-color:#4E4B4A    ;
+}
+
+.feedback > div > p > span{
+    color:white;
+}
+
+.points > span {
+    display: inline-block;
+    width:10px;
+    height:10px;
+    background-color:#464446;
+    margin:6px;
+    border-radius:50%;
+}
+
+.points > span:first-child{
+    width:4%;
+    background-color:#AF3AA9;
+    border-radius:20px;
+    box-shadow: 2px 2px 20px 0px rgba(175,58,169,1);
+}
+
+/* call to action section  */
+
+.call-to-action{
+    padding:10%;
+    text-align:center;
+    background-image: url('./Assets/Photos/Diamond-right.png'),url('./Assets/Photos/Diamond-left.png'),url('./Assets/Photos/Rectangle\ 6774.png'),url('./Assets/Photos/Rectangle\ 6773.png') ;
+    background-repeat: no-repeat;
+    background-size:50% 100%,50% 100%, 100% 100%, 100% 100%;
+    background-position: left,right 30px,left,right;
+}
+.call-to-action div{
+    width:100%;
+    height:100%;
+    
+}
+
+.call-to-action  h2{
+    font-size:52px;
+    margin-bottom:5%;
+}
+
+.call-to-action button{
+    text-transform: uppercase;
+    background-color:unset;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.call-to-action span{
+    color:#000;
+}
+
+/* footer section */
+
+footer{
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
