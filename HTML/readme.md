@@ -1,29 +1,27 @@
-## Full Stack JavaScript 2.0
+**Project 1**
 
-## Project 1
+[Sol](./HTML/Project%2001/style.css)
 
-### Output
+**Project 2**
 
-![Project 1](./Project%2001/output.png)
+[Sol](./HTML/Project%2002/style.css)
 
-- you are not allowed to change the HTML file, You have to fix the CSS file.
+**Project 3**
 
----
+[Sol](./HTML/Project%2003/style.css)
 
-## Project 2
+**Project 4**
 
-### Output
+[Sol](./HTML/Project%2004/style.css)
 
-![Project 1](./Project%2002/output.png)
+**Project 5**
 
-- you are not allowed to change the HTML file, You have to fix the CSS file.
+[Sol](./HTML/Project%2005/style.css)
 
----
+**Project 6**
 
-## Project 3
+[Sol](./HTML/Project%2006/style.css)
 
-### Output
+**Projects**
 
-![Project 1](./Project%2003/output.png)
-
-- you are not allowed to change the HTML file, You have to fix the CSS file.
+1. [Credit Card Landing Page](./Mock%20Websites/Project%201-%20Credit%20Card%20Landing%20Page/index.html)
