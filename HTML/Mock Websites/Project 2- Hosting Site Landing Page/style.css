@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,200;1,300&display=swap");
+
+:root {
+  --primary: #4b8bfd;
+  --secondary: #111010;
+  --light-black: #1d1c1c;
+  --yellow: #f4ae4b;
+  --gray: #a19f9f;
+  --white: #ffffff;
+  --direction: row;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styles  */
+
+body {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-family: "Poppins";
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+em {
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 20px;
+  color: var(--gray);
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-right: 1em;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.outline {
+  background-color: var(--secondary);
+  border: 1px solid var(--white);
+}
+
+/* navigation section   */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+}
+
+/* hero section  */
+.hero {
+  display: flex;
+  flex-direction: var(--direction);
+  padding-top: 5%;
+  align-items: center;
+}
+
+.hero .left > * {
+  margin-bottom: 8%;
+}
+
+/* logo section  */
+
+.logos {
+  background-color: var(--light-black);
+  padding: 3%;
+  margin-top: 2%;
+}
+.logos ul {
+  justify-content: space-evenly;
+}
+
+/* features section  */
+
+.features {
+  background-color: var(--white);
+  color: var(--secondary);
+  padding-block: 7%;
+  padding-inline: 5%;
+  text-align: center;
+}
+.features > p {
+  max-width: 40%;
+  margin: 2% auto;
+}
+
+.features .cards {
+  display: flex;
+  flex-direction: var(--direction);
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.features .cards div {
+  border: 1px solid var(--gray);
+  padding: 2%;
+  border-radius: 20px;
+  margin-right: 2%;
+}
+.features .cards div:nth-child(2) {
+  background-color: var(--secondary);
+  color: var(--white);
+  position: relative;
+  top: -30px;
+}
+
+/* features list section  */
+
+.features-list {
+  background-color: var(--white);
+  color: var(--secondary);
+  padding: 5%;
+  margin: auto;
+}
+
+.features-list ul {
+  flex-direction: column;
+}
+
+.features-list > div {
+  display: flex;
+  flex-direction: var(--direction);
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.features-list ul li {
+  border: 1px solid var(--gray);
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  margin: 0.5em;
+  border-radius: 50px;
+}
+.features-list .left {
+  width: 40%;
+}
+.features-list .left ul li {
+  padding: 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.features-list .left ul li:nth-child(1) {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.features-list .left ul li img {
+  width: 25px;
+}
+
+.features-list .right {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 2%;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.features-list .right ul li {
+  margin: 0.2em;
+  text-align: left;
+  background-color: rgb(48, 47, 47);
+  border: none;
+}
+.features-list .right ul li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-inline: 2% 3%;
+}
+
+/* pricing section  */
+
+.pricing {
+  padding-block: 5%;
+  text-align: center;
+}
+.heading {
+  position: relative;
+  margin-bottom: 2%;
+}
+.heading img {
+  width: 3em;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 0;
+}
+.leftArrow {
+  position: absolute;
+  left: 0;
+}
+
+.price-cards {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: var(--direction);
+}
+
+.price-card {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  width: 25%;
+  background-color: var(--white);
+  margin-right: 10px;
+  color: var(--secondary);
+  border-radius: 20px;
+}
+.price-card > * {
+  margin-bottom: 10px;
+}
+.price-card ul {
+  flex-direction: column;
+  border-top: 0.5px solid rgb(201, 197, 197);
+  padding-block: 4%;
+}
+
+.price-card ul img {
+  vertical-align: middle;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.price-card ul li {
+  margin-bottom: 10px;
+}
+
+.price-card p {
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+strong {
+  font-size: 3em;
+}
+strong span {
+  font-size: 1.5rem;
+  color: var(--gray);
+}
+
+.price-card:nth-child(2) {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.price-card:nth-child(2) button {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.price-card:nth-child(2) p {
+  color: var(--white);
+}
+.price-card:nth-child(2) strong span {
+  color: rgb(218, 214, 214);
+}
+
+/* feedback section  */
+
+.feedback {
+  padding-block: 5%;
+  background-color: var(--white);
+  color: var(--secondary);
+}
+
+.feedback > div {
+  display: flex;
+  flex-direction: var(--direction);
+  justify-content: space-evenly;
+}
+
+.feedback .head{
+    padding-inline:2%;
+}
+.feedback .head h2{
+    max-width:400px;
+}
+.feedback .head p {
+    max-width:300px;
+}
+
+.feedback-card {
+  margin-top: 5%;
+  width: 40%;
+  background-color: var(--secondary);
+  border-radius: 20px;
+  padding-top: 3%;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feedback-card:nth-child(odd) {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.feedback-card:nth-child(even) {
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  color: var(--secondary);
+}
+.feedback-card:nth-child(even) p {
+  color: var(--secondary);
+}
+
+.feedback-card > div,
+.feedback-card > p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 90%;
+  background-color: var(--gray);
+  height: 5px;
+  margin: 5% auto;
+  border-radius: 20px;
+}
+
+.slider span {
+  width: 25%;
+  background-color: var(--primary);
+}
+
+/* cta action  */
+
+.cta {
+  padding-block: 5%;
+  padding-inline: 5%;
+  text-align: center;
+}
+
+.cta .signup {
+  padding: 5%;
+  background-color: #292828;
+  display: flex;
+  flex-direction: var(--direction);
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+
+input {
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  background-color: #3e3d3d;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.signup button {
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+input::placeholder {
+  color: rgb(190, 187, 187);
+}
+
+/* footer section  */
+
+footer {
+  padding-block: 5%;
+  padding-inline: 2%;
+}
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #3e3d3d;
+  padding-block: 5%;
+}
+
+footer ul {
+  flex-direction: column;
+  margin-bottom:10px;
+}
+
+footer ul li:nth-child(1) {
+  font-weight: bold;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+.btn:hover{
+    color:var(--primary);
+    background-color:var(--white);
+}
+.outline:hover{
+    color:var(--white);
+    background-color: var(--primary);
+}
+
+a:hover{
+    color:#4b8bfd;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --direction: column;
+  }
+  .signup{
+    justify-content: center;
+    align-items: center;
+  }
+  .signup input{
+    margin-bottom:10px;
+    width:100%;
+  }
+  .signup button{
+    width:100%;
+  }
+
+  .rcard > div{
+    margin-bottom:5%;
+    width:90%;
+    margin-inline:auto;
+  }
+
+  .features .cards div:nth-child(2){
+    position:static;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .hero .right{
+    display: none;
+  }
+
+ h1{
+    font-size:3.5rem;
+ }
+ h2{
+    font-size:2rem;
+ }
+
+ .price-cards{
+    margin-top:30%;
+ }
+
+ .pricing{
+    padding-inline:5%;
+ }
+ .heading img{
+    width:2em;
+ }
+
+ .footer-logo{
+    width:5em;
+ }
+
+ .hero{
+    padding-inline:5%;
+ }
+ 
+ .features p{
+    max-width:90%;
+ }
+
+ .logos{
+    display: none;
+ }
+
+ .features-list > div{
+    width:100%;
+ }
+
+ .features-list .left,.features-list .right{
+    width: 100%;
+ }
+ .features-list .left ul li{
+    font-size:16px;
+ }
+}

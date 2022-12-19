@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hosting Site</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- content wrapper -->
@@ -37,7 +38,7 @@
 
           <div class="button-links">
             <a href="#" class="btn">Get Started</a
-            ><a href="#" class="btn">Try Start Free</a>
+            ><a href="#" class="btn outline">Try Start Free</a>
           </div>
         </div>
         <div class="right">
@@ -50,10 +51,10 @@
       <div class="logos">
         <ul>
           <li>
-            <img src="./assets/Logo.svg" alt="" /><img
+            <img src="./assets/Logo.svg" alt="" /> </li><li><img
               src="./assets/Logo.svg"
               alt=""
-            /><img src="./assets/Logo.svg" alt="" /><img
+            /></li><li><img src="./assets/Logo.svg" alt="" /></li><li><img
               src="./assets/Logo.svg"
               alt=""
             />
@@ -64,16 +65,16 @@
       <!-- features section  -->
 
       <section class="features">
-        <h1>The best service especially for you</h1>
+        <h2>The best service especially for you</h2>
         <p>
           We will serve you as best we can with the aim of providing
           satisfaction to you.
         </p>
 
-        <div class="cards">
+        <div class="cards rcard">
           <div>
             <img src="./assets/Icons/fast.svg" alt="" />
-            <h2>Faster hosting process</h2>
+            <h3>Faster hosting process</h3>
             <p>
               We can speed up the creation of your website, which is made
               directly by experts.
@@ -81,7 +82,7 @@
           </div>
           <div>
             <img src="./assets/Icons/signal.svg" alt="" />
-            <h2>Speed to access faster</h2>
+            <h3>Speed to access faster</h3>
             <p>
               Excellent network infrastructure and hardware to support fast and
               stable access.
@@ -89,7 +90,7 @@
           </div>
           <div>
             <img src="./assets/Icons/heart.svg" alt="" />
-            <h2>Faster Service 24/7</h2>
+            <h3>Faster Service 24/7</h3>
             <p>
               We have response time of less than 150 seconds, available 24 hours
               a day.
@@ -144,11 +145,13 @@
       <!-- pricing section  -->
 
       <section class="pricing">
-        <h2>Hosting your website with the services we provide</h2>
-        <img src="./assets/Icons/arrow-left.svg" alt="" />
-        <img src="./assets/Icons/arrow-right.svg" alt="" />
+        <div class="heading">
+          <h2>Hosting your website with the services we provide</h2>
+        <img src="./assets/Icons/arrow-left.svg" class="leftArrow" alt="" />
+        <img src="./assets/Icons/arrow-right.svg" class="rightArrow" alt="" />
+        </div>
 
-        <div class="price-cards">
+        <div class="price-cards rcard">
           <div class="price-card">
             <h2>Regular</h2>
             <strong>$8,9 <span>/month</span></strong>
@@ -259,7 +262,7 @@
       <!-- feeback section  -->
 
       <section class="feedback">
-        <div>
+        <div class="head">
           <h2>What do your customers say?</h2>
           <p>
             You will definitely be surprised how our customers comment on what
@@ -267,9 +270,12 @@
             customers.
           </p>
         </div>
-        <div>
+        <div class="rcard">
           <div class="feedback-card">
-            <img src="./assets/Icons/Group 238511.svg" alt="" />
+            <div>
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg" alt="" />
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg" alt="">  
+            </div>
             <div>
               <h4>Slamet Wijaya</h4>
               <span>CEO Tokped</span>
@@ -289,28 +295,10 @@
             </p>
           </div>
           <div class="feedback-card">
-            <img src="./assets/Icons/Group 238511.svg" alt="" />
             <div>
-              <h4>Slamet Wijaya</h4>
-              <span>CEO Tokped</span>
-            </div>
-            <p>
-              Web hosting that I highly recommend because the serivce provided
-              is very good, hosting is fast so with pretty fantastic speed.
-            </p>
-            <p>
-              <img src="./assets/Icons/Star.svg" alt="" /><img
-                src="./assets/Icons/Star.svg"
-                alt=""
-              /><img src="./assets/Icons/Star.svg" alt="" /><img
-                src="./assets/Icons/Star.svg"
-                alt=""
-              /><img src="./assets/Icons/Star.svg" alt="" />
-            </p>
-          </div>
-          <div class="feedback-card">
-            <img src="./assets/Icons/Group 238511.svg" alt="" />
-            <div>
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg" alt="" />
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg" alt="">  
+            </div><div>
               <h4>Slamet Wijaya</h4>
               <span>CEO Tokped</span>
             </div>
@@ -329,8 +317,8 @@
             </p>
           </div>
         </div>
-        <div>
-          <p class="slider">-----------------</p>
+        <div  class="slider">
+          <span> </span>
         </div>
       </section>
 
@@ -345,7 +333,7 @@
             <input type="text" name="" id="" placeholder="Name" />
             <input type="email" name="" id="" placeholder="E-mail Address" />
             <input type="password" name="" id="" placeholder="Password" />
-            <button type="submit" class="btn">Sign Up</button>
+            <button type="submit" class="btn ">Sign Up</button>
           </form>
         </div>
       </section>
