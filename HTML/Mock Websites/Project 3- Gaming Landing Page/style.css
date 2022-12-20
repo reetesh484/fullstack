@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,200;1,300&display=swap');
+
+:root{
+    --primary:#F1694D;
+    --black:#000;
+    --white:#fff;
+    --primary-light:#FBE1DB;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:16px;
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size:3.5rem;
+}
+h2{
+    font-size:3.2rem;
+}
+h3{
+    font-size:2.8rem;
+}
+h4{
+    font-size:1.3rem;
+}
+p{
+    font-size:1.2rem;
+}
+
+a{
+    font-size:1.2rem;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.btn{
+    border:none;
+    padding:10px 20px;
+    background-color:var(--primary);
+    color:var(--white);
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons .btn{
+    margin-right:1rem;
+}
+
+.btn-outline{
+    border:1px solid var(--white);
+    color:var(--white);
+    background-color:transparent;
+}
+
+.landing{
+    background:linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.4)),linear-gradient(to left, rgba(0,0,0,0.3),rgba(0,0,0,0.4)) , url('./Assets/Photos/futuristic-bg.png');
+    padding-inline:5%;
+    height: 90vh;
+    color:var(--white);
+    min-height: max-content;
+}
+
+/* navigation section  */
+
+.content{
+    max-width:1250px;
+    margin:auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+
+nav ul li{
+    margin-right:1.2rem;
+}
+
+/* hero section  */
+
+.hero{
+    padding-top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .left{
+    width:50%;
+}
+
+.hero .left > *{
+    margin-bottom:1.5rem;
+}
+
+.hero .right {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+width:50%;
+}
+
+.hero .right img{
+    width:5rem;
+    margin-bottom:10rem;
+    margin-top:5rem;
+}
+
+.hero .right p{
+    width:200px;
+}
+
+.hero .right p::before{
+    content:'';
+    width:30px;
+    height:2px;
+    display: inline-block;
+    background-color:var(--white);
+    position:relative;
+    margin:5px;
+}
+
+
+.popular-games{
+    padding-top:10rem;
+    color:var(--black);
+    text-align: center;
+}
+.popular-games h2{
+    max-width:60%;
+    margin:auto;
+}
+
+.game-cards{
+    margin-top:5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width:250px;
+    height:300px;
+    position: relative;
+    margin-right:1rem;
+    margin-bottom:1rem;
+    transition:.2s;
+}
+.game-cards:hover > :not(:hover){
+    opacity: .4;
+}
+
+.card img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+.card .details{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:max-content;
+    backdrop-filter: blur(50px);
+    color:var(--white);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding:10px;
+    transition:.2s;
+}
+
+
+/* war game  */
+
+.war-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.war-game-img{
+    max-width: 500px;
+}
+
+.war-game img{
+    max-width: -webkit-fill-available;
+    min-width: 200px;
+    object-fit:cover;
+}
+
+.war-game-details{
+    padding:5rem;
+}
+
+.war-game-details > *{
+    margin-bottom:2rem;
+}
+
+.war-game .btn-outline{
+    color:var(--primary);
+    border:1px solid var(--primary);
+}
+
+
+.recommendation{
+    padding-top:5rem;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head h2{
+    max-width:600px;
+}
+.head .paginations span{
+    padding:1rem;
+    margin-right:5px;
+}
+.paginations > span:nth-child(1){
+    background-color: var(--primary-light);
+}
+.paginations > span:nth-child(2){
+    background-color: var(--primary);
+}
+
+.recommend-cards{
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+    padding-block: 5rem;
+    gap:3rem;
+}
+
+.recommend-card{
+    display: flex;
+    max-width:450px;
+    max-height: 200px;
+}
+.recommend-card img{
+    max-width: 40%;
+    object-fit: cover;
+}
+.recommend-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:10px;
+}
+.recommend-card-details title{
+    font-size:1.5rem;
+}
+.recommend-card-details a{
+    font-size:14px;
+}
+
+/* most played section  */
+
+.most-played{
+    text-align: center;
+    background-color:var(--black);
+    color:var(--white);
+    padding-top:5rem;
+}
+.most-played h3{
+    max-width: 450px;
+    margin-inline:auto;
+}
+.played-games{
+    display: flex;
+    justify-content: space-between;
+    
+    padding:5rem;
+}
+.played-games .left{
+    width:35%;
+}
+.played-games .right{
+    width:60%;
+    text-align:left;
+    padding:10px;
+}
+.played-games div img{
+    max-width: -webkit-fill-available;
+    min-width: 200px;
+}
+.played-games .right img{
+    width:45%;
+    margin-top:2rem;
+}
+
+/* cta section  */
+
+.cta{
+    padding-block:5rem;
+    background:linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.6)) ,linear-gradient(to left,rgba(0,0,0,0.1),rgba(0,0,0,0.6)) , url('./Assets/Photos/Rectangle\ 606.png');
+    background-size:cover;
+    color:var(--white);
+}
+
+.cta > div{
+    max-width: 550px;
+    margin-inline:auto;
+    text-align: center;
+}
+
+.cta > div > *{
+    margin-bottom:2rem;
+}
+
+/* footer section  */
+footer{
+    background-color: #000;
+    color:var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:3rem;
+}
+
+footer ul{
+    flex-direction: column;
+}
+
+footer ul>li:first-child{
+    font-weight: 600;
+    margin-bottom:1rem;
+}
+
+footer ul li{
+    margin-bottom:0.6rem;
+}
+
+.footer-logo{
+    max-width:200px;
+}
+.footer-logo > *{
+    margin-bottom:1rem;
+}
+.social-links > *{
+    margin-right:0.5rem;
+}
+
+a:hover{
+    color:var(--primary);
+}
+.btn:hover{
+    background-color: var(--white);
+    color:var(--primary);
+    outline:1px solid var(--primary);
+}
+.btn-outline:hover{
+    background-color: var(--primary);
+    color:var(--white);
+}
+
+
+@media (min-width:601px) and (max-width:900px) {
+    html{
+        font-size:14px;
+    }
+    a{
+        font-size:1.2rem;
+    }
+    
+   
+}
+
+@media (max-width:600px) {
+    html{
+        font-size:12px;
+    }
+    a{
+        font-size:1.5rem;
+    }
+    p{
+        font-size:1.5rem;
+    }
+   
+    
+}   
+
+@media (max-width:1100px){
+    .recommend-cards{
+        grid-template-columns: repeat(1,1fr);
+        place-content: center;
+        padding:0.5rem;
+    }
+    .played-games{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .played-games .right{
+        width:100%;
+    }
+    .war-game{
+        flex-direction: column;
+        padding-top:5rem;
+    }
+    .hero .left{
+        width:100%;
+    }
+    .hero .right{
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .landing{
+        height:max-content;
+    }
+    .head{
+        flex-direction:column;
+    }
+    .head>*{
+        margin-bottom:5px;
+    }
+    
+}
