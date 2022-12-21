@@ -25,3 +25,7 @@
 **Projects**
 
 1. [Credit Card Landing Page](./Mock%20Websites/Project%201-%20Credit%20Card%20Landing%20Page/index.html)
+
+2. [Hosting Site](./Mock%20Websites/Project%202-%20Hosting%20Site%20Landing%20Page/index.html)
+
+3. [Gaming Site](./Mock%20Websites/Project%203-%20Gaming%20Landing%20Page/index.html)
