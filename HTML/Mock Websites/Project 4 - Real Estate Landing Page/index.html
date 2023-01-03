@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="content">
+    <div class="">
       <div class="landing">
+      <div class="content">
         <nav>
           <div class="logo">
             <img src="./Icons/Logo.svg" alt="" />
           </div>
-          <ul>
+          <div class="mobile"><img src="./Photos/hamburger.png" alt=""></div>
+          <ul class="desktop">
             <li><a href="#">Location</a></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Testimonials</a></li>
@@ -53,10 +55,11 @@
           </div>
         </div>
       </div>
+      </div>
 
       <!-- best estate gallery section  -->
 
-      <div class="estate-samples">
+      <div class="estate-samples content">
         <div class="head">
           <h2>Our Best Estate, are Modern!</h2>
         </div>
@@ -160,7 +163,7 @@
         </div>
       </div>
 
-      <div class="features">
+      <div class="features content">
         <div class="feature">
           <div class="side-img">
             <img class="feature-bg" src="./Icons/featureImageBg1.svg" alt="" />
@@ -196,7 +199,7 @@
       </div>
 
       <!-- call to action section  -->
-      <div class="cta">
+      <div class="cta content">
         <div class="cta-content">
           <h2>Subscribe to Our Newsletter For Weekly Article Update.</h2>
           <p>
@@ -220,7 +223,7 @@
       </div>
 
       <!-- footer section  -->
-      <footer>
+      <footer class="content">
         <div class="footer-logo">
             <img class="logo" src="./Icons/Logo.svg" alt="" />
             <div class="social-icons">
@@ -256,5 +259,13 @@
         </div>
       </footer>
     </div>
+    <script>
+      let mobile = document.querySelector('.mobile');
+      let desktop = document.querySelector('.desktop')
+
+      mobile.addEventListener('click',() => {
+        desktop.classList.toggle('show');
+      })
+    </script>
   </body>
 </html>
