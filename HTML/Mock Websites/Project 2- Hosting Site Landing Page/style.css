@@ -24,6 +24,10 @@ body {
   font-family: "Poppins";
 }
 
+img{
+  max-width: 100%;
+}
+
 .content {
   max-width: 1250px;
   margin: auto;
@@ -98,6 +102,35 @@ nav {
   margin-bottom: 8%;
 }
 
+.mobile{
+  display: block;
+  width:30px;
+  filter: invert();
+
+}
+.desktop{
+  display:none;
+}
+
+.show{
+  display: block;
+  position:absolute;
+  top:80px;
+  background-color:white;
+  color:black;
+  width:92%;
+  text-align: center;
+}
+.show ul{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  gap:1em;
+  margin-bottom:1em;
+}
+
+
+
 /* logo section  */
 
 .logos {
@@ -107,6 +140,13 @@ nav {
 }
 .logos ul {
   justify-content: space-evenly;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1em;
 }
 
 /* features section  */
@@ -279,7 +319,7 @@ nav {
 }
 
 strong {
-  font-size: 3em;
+  font-size: 2em;
 }
 strong span {
   font-size: 1.5rem;
@@ -310,11 +350,38 @@ strong span {
   color: var(--secondary);
 }
 
-.feedback > div {
+.head {
   display: flex;
   flex-direction: var(--direction);
   justify-content: space-evenly;
 }
+.rcard{
+  display: flex;
+  flex-direction:var(--direction);
+  gap:1em;
+  padding:2em;
+}
+.feedback .rcard{
+  overflow-x:scroll;
+}
+.rcard::-webkit-scrollbar{
+  background:#fff;
+ margin:2em;
+ max-width:500px;
+}
+.rcard::-webkit-scrollbar-track{
+  margin:2em;
+  background-color: #e5e5e5;
+}
+.rcard::-webkit-scrollbar-thumb{
+  background:#148bec;
+  border-radius:20px;
+}
+
+.rcard::-webkit-scrollbar-button{
+ display: none;
+}
+
 
 .feedback .head{
     padding-inline:2%;
@@ -328,7 +395,8 @@ strong span {
 
 .feedback-card {
   margin-top: 5%;
-  width: 40%;
+  min-width: 500px;
+  max-width:100%;
   background-color: var(--secondary);
   border-radius: 20px;
   padding-top: 3%;
@@ -394,6 +462,7 @@ input {
   background-color: #3e3d3d;
   border-radius: 50px;
   margin-right: 10px;
+  margin-bottom:1em;
 }
 .signup button {
   padding: 20px 30px;
@@ -460,9 +529,21 @@ a:hover{
     width:100%;
   }
 
+  .rcard{
+    overflow-x:auto;
+  }
+
+  .head{
+    width:100%;
+  }
+  .head p{
+    min-width: 99%;
+  }
+
+
   .rcard > div{
     margin-bottom:5%;
-    width:90%;
+    min-width:90%;
     margin-inline:auto;
   }
 
@@ -470,9 +551,6 @@ a:hover{
     position:static;
   }
 
-  nav ul{
-    display: none;
-  }
 
   .hero .right{
     display: none;
@@ -494,6 +572,7 @@ a:hover{
  }
  .heading img{
     width:2em;
+    margin-inline:1em;
  }
 
  .footer-logo{
@@ -522,4 +601,12 @@ a:hover{
  .features-list .left ul li{
     font-size:16px;
  }
+}
+@media (min-width:650px){
+  .mobile{
+    display:none;
+  }
+  .desktop{
+    display:flex;
+  }
 }

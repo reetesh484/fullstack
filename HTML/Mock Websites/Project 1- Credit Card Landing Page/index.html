@@ -11,20 +11,25 @@
    <div class="content">
      <!-- navigation -->
      <section class="nav">
-        <nav>
+        <div class="navigation">
             <img src="./Assets/Icons/Logo.svg" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            <div>
-                <span>Eng</span>
-                <span class="dot"></span>
-                <button>Contact Us</button>
+            <div class="mobile">
+                <img src="./Assets/Icons/hamburger.png" alt="">
             </div>
-        </nav>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div>
+                    <span>Eng</span>
+                    <span class="dot"></span>
+                    <button>Contact Us</button>
+                </div>
+            </nav>
+        </div>
     </section>
     <!-- hero section  -->
     <section class="hero">
@@ -158,5 +163,13 @@
         </ul>
     </footer>
    </div>
+   <script>
+    let mobile  = document.querySelector('.mobile');
+    let desktop = document.querySelector('.desktop');
+
+    mobile.addEventListener('click', () => {
+        desktop.classList.toggle('show');
+    })
+   </script>
 </body>
 </html>

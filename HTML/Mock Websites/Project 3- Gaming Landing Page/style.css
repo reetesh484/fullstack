@@ -56,6 +56,9 @@ a{
     background-color:var(--primary);
     color:var(--white);
 }
+img{
+    max-width: 100%;
+}
 
 .buttons{
     display: flex;
@@ -73,7 +76,7 @@ a{
 
 .landing{
     background:linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.4)),linear-gradient(to left, rgba(0,0,0,0.3),rgba(0,0,0,0.4)) , url('./Assets/Photos/futuristic-bg.png');
-    padding-inline:5%;
+    padding-inline:1em;
     height: 90vh;
     color:var(--white);
     min-height: max-content;
@@ -85,7 +88,22 @@ a{
     max-width:1250px;
     margin:auto;
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1em;
+}
+.desktop{
+    display: none;
 
+}
+.mobile{
+    width:30px;
+    filter: invert();
+    display: block;
+    cursor: pointer;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -97,6 +115,43 @@ nav ul li{
     margin-right:1.2rem;
 }
 
+.show{
+    display: block;
+    position:absolute;
+    top:75px;
+    width:100%;
+    background-color:var(--primary);
+    margin-inline:-2em;
+}
+.show ul{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.auth{
+    margin-top:1em;
+    text-align: center;
+}
+.show li{
+    width:100%;
+    text-align: center;
+    padding:1em;
+}
+.show li a{
+    display: inline-block;
+    width:100%;
+    outline:none;
+}
+.show li a:active, .show li a:focus{
+    background-color:white;
+    color:var(--primary);
+}
+.show .auth a:active, .auth a:focus{
+    color:var(--primary);
+    background:white;
+    padding:0.5em 1em;
+}
 /* hero section  */
 
 .hero{
@@ -148,7 +203,8 @@ width:50%;
     text-align: center;
 }
 .popular-games h2{
-    max-width:60%;
+    width:550px;
+    max-width:100%;
     margin:auto;
 }
 
@@ -165,10 +221,6 @@ width:50%;
     position: relative;
     margin-right:1rem;
     margin-bottom:1rem;
-    transition:.2s;
-}
-.game-cards:hover > :not(:hover){
-    opacity: .4;
 }
 
 .card img{
@@ -199,6 +251,8 @@ width:50%;
     justify-content: center;
     align-items: center;
     width:100%;
+    padding-top:5em;
+    gap:2em;
 }
 
 .war-game-img{
@@ -206,13 +260,12 @@ width:50%;
 }
 
 .war-game img{
-    max-width: -webkit-fill-available;
     min-width: 200px;
     object-fit:cover;
 }
 
 .war-game-details{
-    padding:5rem;
+    padding:1rem;
 }
 
 .war-game-details > *{
@@ -293,7 +346,7 @@ width:50%;
     display: flex;
     justify-content: space-between;
     
-    padding:5rem;
+    padding:3rem 1rem;
 }
 .played-games .left{
     width:35%;
@@ -338,7 +391,12 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding:3rem;
+    padding:1rem;
+}
+.footer-links{
+    display: flex;
+    flex-wrap:wrap;
+    gap:2em;
 }
 
 footer ul{
@@ -399,14 +457,16 @@ a:hover{
     p{
         font-size:1.5rem;
     }
-   
     
 }   
 
 @media (max-width:1100px){
+   
+    
     .recommend-cards{
         grid-template-columns: repeat(1,1fr);
         place-content: center;
+        place-items: center;
         padding:0.5rem;
     }
     .played-games{
@@ -415,6 +475,9 @@ a:hover{
         align-items: center;
     }
     .played-games .right{
+        width:100%;
+    }
+    .played-games .left{
         width:100%;
     }
     .war-game{
@@ -439,5 +502,27 @@ a:hover{
     .head>*{
         margin-bottom:5px;
     }
-    
+    .cta{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        background-color:#000;
+    }
+    .cta > div{
+        color:white;
+    }
+}
+
+
+@media (min-width:1100px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+        align-items: center;
+    }
+    .auth{
+        margin-top:0;
+    }
 }

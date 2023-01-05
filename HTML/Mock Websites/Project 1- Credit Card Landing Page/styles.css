@@ -25,6 +25,9 @@ section{
     margin-bottom:5%;
     
 }
+img{
+    max-width: 100%;
+}
 
 button{
     border:none;
@@ -61,6 +64,42 @@ nav{
     padding:10px;
 }
 
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1em;
+}
+.mobile{
+    width:30px;
+    filter: invert(1);
+}
+
+.desktop{
+    display: none;
+}
+
+.show{
+    display: block;
+    position:absolute;
+    top:85px;
+    background:white;
+    width:100%;
+    text-align: center;
+    margin:-1em;
+}
+.show ul{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+    color:#AF3AA9;
+    width:100%;
+    margin-bottom:1em;
+}
+.show ul li a{
+    color:#AF3AA9;
+}
+
 nav>div>*{
     margin-right:15px;
 }
@@ -76,7 +115,7 @@ nav>div>*{
 /* hero section  */
 
 .hero{
-    padding-top:5%;
+    padding-top:2em;
     background-image: url(./Assets/Photos/frontCards.png),url(./Assets/Photos/backCards.png);
     background-size:60%,65%;
     background-repeat:no-repeat,no-repeat;
@@ -85,7 +124,7 @@ nav>div>*{
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:5rem;
     max-width:65%;
 }
 
@@ -113,7 +152,7 @@ nav>div>*{
 
 
 .count{
-    font-size:32px;
+    font-size:2rem;
     font-weight: bold;
     margin-right:1%;
 }
@@ -154,17 +193,17 @@ nav>div>*{
 }
 
 .features-desc h2{
-    font-size:70px; 
+    font-size:3.5rem; 
     max-width:60%;
 }
 
 .features-desc p{
-    font-size:20px;
+    font-size:1.1rem;
     max-width:400px;
 }
 
 .features-list{
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-top:10%;
 }
@@ -182,7 +221,7 @@ nav>div>*{
 }
 
 .features-list > div > p{
-    font-size:18px;
+    font-size:1.1rem;
     font-weight: bold;
 }
 
@@ -209,7 +248,7 @@ nav>div>*{
 }
 
 .card-choice h2{
-    font-size:50px;
+    font-size:3rem;
     margin-bottom:5%;
 }
 
@@ -232,7 +271,7 @@ nav>div>*{
 }
 
 .review h2{
-    font-size:50px;
+    font-size:3rem;
     margin-bottom:5%;
 }
 
@@ -243,8 +282,7 @@ nav>div>*{
 .feedback{
     display:grid;
     text-align: left;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     gap: 5%;
     place-items: center;
     height: max-content;
@@ -258,6 +296,7 @@ nav>div>*{
     padding:15px;
     flex-direction: column;
     background-color: #1E1F24;
+    width:90%;
 }
 
 .feedback > div:nth-child(1){
@@ -301,14 +340,14 @@ nav>div>*{
 }
 
 .call-to-action  h2{
-    font-size:52px;
+    font-size:3.1rem;
     margin-bottom:5%;
 }
 
 .call-to-action button{
     text-transform: uppercase;
     background-color:unset;
-    font-size:20px;
+    font-size:1.1rem;
     font-weight: bold;
 }
 
@@ -323,4 +362,88 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center ;
+}
+
+@media (max-width:600px){
+    html{
+        font-size:10px;
+    }
+    ul{
+        flex-direction:column;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .feedback{
+        grid-template-columns: 1fr;
+        margin-bottom:20%;
+    }
+
+    .points{
+        margin-top:10em;
+    }
+
+    .features-desc,.features-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features-list > div{
+        width:80%;
+        margin-bottom: 5%;
+        margin:5% auto;
+    }
+
+    .features-list> div:nth-child(2n){
+        top:0;
+    }
+
+    .features-desc h2{
+        font-size:3rem;
+        max-width: 100%;
+    }
+
+    .logos ul {
+        align-items: center;
+    }
+
+    .logos ul li{
+        margin-bottom:10%;
+    }
+
+    .hero{
+        background: none;
+        max-width: 100%;
+    }
+    .left{
+        padding:1em;    
+    }
+    .hero h1{
+        max-width:100%;
+    }
+    .hero .left > *{
+        margin-bottom:1em;
+    }
+    .hero .left p{
+        max-width:100%;
+    }
+
+   
+}
+@media (min-width:600px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display:flex;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px){
+    html{
+        font-size:12px;
+    }
 }

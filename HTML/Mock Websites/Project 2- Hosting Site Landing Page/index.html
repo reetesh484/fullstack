@@ -12,17 +12,21 @@
     <div class="content">
       <!-- navigation section  -->
 
-      <nav>
+      <div class="navigation">
         <img src="./assets/Logo.svg" alt="" />
-        <ul>
-          <li><a href="#">Hosting</a></li>
-          <li><a href="#">Domain</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Community</a></li>
-        </ul>
-        <a href="" class="btn">Login</a>
-      </nav>
+        <div class="mobile"><img src="./assets/Icons/hamburger.png" alt=""></div>
+        <nav class="desktop">
+          <ul>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Domain</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+          <a href="" class="btn">Login</a>
+        </nav>
+      </div>
+     
 
       <!-- hero section  -->
 
@@ -316,9 +320,50 @@
               /><img src="./assets/Icons/Star.svg" alt="" />
             </p>
           </div>
-        </div>
-        <div  class="slider">
-          <span> </span>
+          <div class="feedback-card">
+            <div>
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg" alt="" />
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg" alt="">  
+            </div><div>
+              <h4>Slamet Wijaya</h4>
+              <span>CEO Tokped</span>
+            </div>
+            <p>
+              Web hosting that I highly recommend because the serivce provided
+              is very good, hosting is fast so with pretty fantastic speed.
+            </p>
+            <p>
+              <img src="./assets/Icons/Star.svg" alt="" /><img
+                src="./assets/Icons/Star.svg"
+                alt=""
+              /><img src="./assets/Icons/Star.svg" alt="" /><img
+                src="./assets/Icons/Star.svg"
+                alt=""
+              /><img src="./assets/Icons/Star.svg" alt="" />
+            </p>
+          </div>
+          <div class="feedback-card">
+            <div>
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg" alt="" />
+              <img src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg" alt="">  
+            </div><div>
+              <h4>Slamet Wijaya</h4>
+              <span>CEO Tokped</span>
+            </div>
+            <p>
+              Web hosting that I highly recommend because the serivce provided
+              is very good, hosting is fast so with pretty fantastic speed.
+            </p>
+            <p>
+              <img src="./assets/Icons/Star.svg" alt="" /><img
+                src="./assets/Icons/Star.svg"
+                alt=""
+              /><img src="./assets/Icons/Star.svg" alt="" /><img
+                src="./assets/Icons/Star.svg"
+                alt=""
+              /><img src="./assets/Icons/Star.svg" alt="" />
+            </p>
+          </div>
         </div>
       </section>
 
@@ -374,5 +419,13 @@
         </div>
       </footer>
     </div>
+    <script>
+      let mobile = document.querySelector('.mobile');
+      let desktop = document.querySelector('.desktop');
+
+      mobile.addEventListener('click',() => {
+        desktop.classList.toggle('show');
+      })
+    </script>
   </body>
 </html>
