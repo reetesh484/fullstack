@@ -19,3 +19,7 @@
 **Article 5 - Git Version Control**
 
 [Sol](https://reeteshtiwari.hashnode.dev/git-version-control)
+
+**Article 6 - Arrays in Javascript**
+
+[Sol](https://reeteshtiwari.hashnode.dev/arrays-javascript)
