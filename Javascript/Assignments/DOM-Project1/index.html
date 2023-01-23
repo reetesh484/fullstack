@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pointer</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+      }
+      .circle {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transition: transform 1s ease-in-out, opacity 3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let body = document.querySelector("body");
+      body.addEventListener("click", (event) => {
+        let div = document.createElement("div");
+        div.classList.add("circle");
+        div.style.backgroundColor = `rgb(150,${event.x},${event.y})`;
+        div.style.top = `${event.y - 7}px`;
+        div.style.left = `${event.x - 7}px`;
+        body.appendChild(div);
+        setInterval(() => {
+          div.style.transform = "scale(1.5)";
+          div.style.opacity = 0;
+        }, 10);
+        setTimeout(() => {
+          body.removeChild(div);
+          clearInterval();
+        }, 3000);
+        clearTimeout();
+      });
+      console.log(body);
+    </script>
+  </body>
+</html>
