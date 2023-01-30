@@ -2,7 +2,7 @@ const refreshBtn = document.querySelector(".refresh-btn");
 const colorBox = document.querySelectorAll(".color");
 
 const generatePalette = () => {
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < colorBox.length; i++) {
     let randomHex = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
     colorBox[i].children[0].style.backgroundColor = randomHex;
     colorBox[i].children[1].innerText = randomHex;

@@ -77,7 +77,8 @@ h1 {
   transform: scale(0.95);
 }
 .refresh-btn:hover {
-  filter: brightness(110%);
+  filter: brightness(70%);
+  color: white;
 }
 
 @media (max-width: 600px) {
