@@ -3,7 +3,8 @@
 const mainLang = document.querySelector(".main__languages");
 
 let OriginalList = document.querySelectorAll(".main__languages a");
-let flag = true;
+
+const interval = setInterval(remove, 1);
 
 function remove() {
   let tempList = OriginalList;
@@ -11,9 +12,6 @@ function remove() {
   tempList.map((ele) => {
     if (ele.innerText.includes("2.0")) ele.style.display = "none";
   });
-}
-if (flag) {
-  remove();
 }
 
 //Assignment 2
@@ -24,8 +22,9 @@ const submit = document.querySelector(".main__form-btn");
 input.removeAttribute("disabled");
 submit.removeAttribute("disabled");
 
-submit.addEventListener("click", () => {
-  flag = false;
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  clearInterval(interval);
   add();
 });
 
